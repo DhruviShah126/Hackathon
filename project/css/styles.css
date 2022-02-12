@@ -8,16 +8,27 @@ body {
     background-color: #66D0FF;
 }
 
+.parent {
+    display: flex;
+}
+
 .cloud{
-    margin-top: 160px;
-    margin-left: 200px;
+    /* margin-top: 160px;
+    margin-left: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 200px;
-    background: #ECEFF1;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 100px;
+    background-image: url(https://www.pngfind.com/pngs/m/83-837234_white-cloud-png-amp-white-cloud-transparent-clipart.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: contain;
+    /* box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px; */
 }
-.cloud::after, .cloud::before {
+/* .cloud::after, .cloud::before {
     content: "";
     position: relative;
     display: inline-block;
@@ -37,12 +48,12 @@ body {
     height: 300px;
     top: -100px;
     left: 240px;
-}
+} */
 
 .boxed {
     width: 100px;
     height: 100px;
-    margin-left: 1100px;
+    /* margin-left: 1100px; */
     border: 1px solid black;
 }
 

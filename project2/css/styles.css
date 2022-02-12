@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(https://www.miamiandbeaches.com/getmedia/bbcdccc6-8f9c-41e9-b531-4b7f8b7fc093/Miami_Zoom-Rooms-Customized-Background-Images_Downtown_10.aspx?ext=.jpg);
+}
+
+.portrait {
+    width: 300px;
+    height: 350px;
+    left: 900px;
+    margin-top: 260px;;
+}
