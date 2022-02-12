@@ -14,7 +14,7 @@
 
 .box1 {
     width: 300px;
-    margin: 50px auto;
+    margin: 30px auto;
     border: 4px dotted black;
     padding: 20px;
     text-align: center;
@@ -50,20 +50,75 @@
     left: 24px;
     bottom: -13px;
   }
-    
 
-.portrait1 {
+.contain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 96%;
+    width: 98%;
+    opacity: 0;
+    transition: 0.5s ease;
+
+    border: 5px solid #666666;
+    background-color: #c0cedd;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.overlay p {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* display: bloack;
+    position: absolute;
+    font-size: 30px;
+    line-height: 25px;
+    top: -3%;
+    left: 43%;
+
+    color: #000000;
+    text-align: center; */
+}
+
+
+.tour-guide {
     width: 300px;
     height: 350px;
-    margin-left: 320px;
-    margin-top: -90px;;
+    margin-right: -3%;
+    margin-left: 5%;
 }
 
 .portrait2 {
     width: 300px;
     height: 300px;
     margin-left: -2px;
-    margin-top: 300px;
 }
 
 a.hideDisplay {
@@ -84,7 +139,8 @@ a.hideDisplay span.showDisplayOnHover {
 a.hideDisplay:hover span.showDisplayOnHover {
     display: block;
     position: absolute;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
 
     line-height: 25px;
 
@@ -95,38 +151,36 @@ a.hideDisplay:hover span.showDisplayOnHover {
     height: 250px;
     padding: 10px;
 
-    border: 1px solid #666666;
+    border: 10px solid #666666;
     background-color: #c0cedd;
 
     color: #000000;
-    text-align: left;
+    text-align: center;
 }
 
 span.showBodyOfDisplayOnHover {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     color: #444;
     line-height: 18px;
 }
 
-.Tequesta {
-    width: 400px;
-    height: 250px;
-    margin: 0px 0px 350px -190px;
-}
-
 button {
-    background-color: #000;
-    margin: 20px;
-    border: .5px solid mediumslateblue;
+    background-color: lightgrey;
+    font-family: arial;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px;
+    margin-left: 1%;
+    border: 2px solid #666666;
     border-radius: 10px;
-    color: #fff;
+    color: black;
     padding: 8px;
   }
 
 .homeBody {
     background-image: url(https://www.miamiandbeaches.com/getmedia/bbcdccc6-8f9c-41e9-b531-4b7f8b7fc093/Miami_Zoom-Rooms-Customized-Background-Images_Downtown_10.aspx?ext=.jpg);
-}
+} */
 
 .riverBody {
     background-image: url(https://instyleyachts.com/wp-content/uploads/2021/04/Miami-River--710x410.jpeg);

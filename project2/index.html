@@ -6,8 +6,10 @@
     <body class="homeBody">
         <h1 class="homeHeader">Welcome to [Insert Name Here]!</h1>
         <div class="box1 sb7">Hi! My name is [insert name here] and I will be your tour guide today. Come with me as I show you some historical landmarks here in the city of Miami. Along the way, you will encounter trivia questions about each place that we visit. Once you get them correct, you can uncover some fun facts!</div>
-        <img class="portrait1" src="img/tourist.png">
-        <button id="miamiRiver">Click me to go to the first location!</button>
+        <div class="contain" style="width: 80%; justify-content: center" >
+            <img class="tour-guide" src="img/tourist.png" style="margin-top: -5%">
+            <button id="miamiRiver">Click me to go to the first location!</button>
+        </div>
         <script>
             document.querySelector('#miamiRiver').addEventListener('click', () => {
                 window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/MiamiRiver.html';
