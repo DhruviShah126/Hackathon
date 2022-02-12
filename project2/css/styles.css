@@ -43,9 +43,7 @@
     width: 0px;
     height: 0px;
     position: absolute;
-    /* border-left: 10px solid #fff; */
     border-right: 10px solid transparent;
-    /* border-top: 10px solid #fff; */
     border-bottom: 10px solid transparent;
     left: 24px;
     bottom: -13px;
@@ -88,23 +86,16 @@
 
 .overlay h2 {
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
 
 .overlay p {
     text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    /* display: bloack;
-    position: absolute;
-    font-size: 30px;
-    line-height: 25px;
-    top: -3%;
-    left: 43%;
-
-    color: #000000;
-    text-align: center; */
 }
 
 
@@ -118,51 +109,7 @@
 .portrait2 {
     width: 300px;
     height: 300px;
-    margin-left: -2px;
-}
-
-a.hideDisplay {
-    position: relative;
-    z-index: 20;
-    color: black;
-    text-decoration: none;
-}
-
-a.hideDisplay:hover {
-    z-index: 30; /* the higher the number, the higher on the page it appears */
-}
-
-a.hideDisplay span.showDisplayOnHover {
-    display: none; /* hides box until you hover over it */
-}
-
-a.hideDisplay:hover span.showDisplayOnHover {
-    display: block;
-    position: absolute;
-    font-size: 25px;
-    font-weight: bold;
-
-    line-height: 25px;
-
-    top: -600px;
-    left: -190px;
-
-    width: 378px;
-    height: 250px;
-    padding: 10px;
-
-    border: 10px solid #666666;
-    background-color: #c0cedd;
-
-    color: #000000;
-    text-align: center;
-}
-
-span.showBodyOfDisplayOnHover {
-    font-size: 20px;
-    font-weight: normal;
-    color: #444;
-    line-height: 18px;
+    margin-left: -100px;
 }
 
 button {
@@ -180,9 +127,10 @@ button {
 
 .homeBody {
     background-image: url(https://www.miamiandbeaches.com/getmedia/bbcdccc6-8f9c-41e9-b531-4b7f8b7fc093/Miami_Zoom-Rooms-Customized-Background-Images_Downtown_10.aspx?ext=.jpg);
-} */
+} 
 
 .riverBody {
-    background-image: url(https://instyleyachts.com/wp-content/uploads/2021/04/Miami-River--710x410.jpeg);
+    /* background-image: url(https://instyleyachts.com/wp-content/uploads/2021/04/Miami-River--710x410.jpeg); */
     background-size: 1600px 800px;
+    background-color: #98bcd4;
 }

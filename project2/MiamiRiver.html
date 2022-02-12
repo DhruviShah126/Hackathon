@@ -2,6 +2,54 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              overflow-wrap: break-word;
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: #ffff;
+              margin: auto;
+              padding: 20px;
+              border: 2px solid #888;
+              width: 80%;
+              min-width: 800px !important;
+              overflow-wrap: break-word;
+              
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
     </head>
     <body class="riverBody">
         <h1 class="riverHeader">Welcome to the Miami River!</h1>
@@ -31,6 +79,122 @@
                 </div>
             </div>
         </div>
-        <img class="portrait2" src="img/tourist.png">
+        <div class="contain" style="width: 80%">
+            <img class="portrait2" src="img/tourist.png">
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Click Here For Trivia!</button>
+            <button id="royalPalm">On to the Next Location!</button>
+        </div>
+        <script>
+            document.querySelector('#royalPalm').addEventListener('click', () => {
+                window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/royalPalm.html';
+            })
+        </script>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="myModal">
+                        <div id="color001">
+                            <div id="center001">
+                                <h2><strong>Miami River Quiz</strong></h2>
+                                <p><strong>Word Bank:</strong> Tuttle - Flagler - Tequesta - Miami River</p>
+                            </div><br />
+                            <p>The first settlers of in the South Florida area were the  
+                                <input type="text" class="check003" id="input001" size="15" />
+                                <text class="button002" id="check001"></text>. 
+                                All inhabitants from the tribes to the pioneers settled along the <input id="input002" size="15" />
+                                <text class="button002" id="check002"></text>. 
+                                Among the 9 inhabitants of what would become modern-day Miami, Julia <input id="input003" size="15" /> 
+                                <text class="button002" id="check003"></text> was one of them and would later be known as the "Mother of Miami," 
+                                for her contribution in making Miami an established city.</p>
+                            <div id="disappear001">
+                                <div id="center001">
+                                    <button class="button001" onclick="submit001()">Submit</button>
+                                </div>
+                            </div><br />
+                        <div id="center001">
+                            <p id="message001"></p>
+                            <p id="reload001"></p>
+                        </div>
+                            <br />
+                        <br />
+                    </div>
+                </div>
+                <script>
+                    var g;
+                    var h;
+                    var i;
+                    var j;
+                    var k;
+                    function submit001() {
+                        b = input001.value;
+                        c = input002.value;
+                        d = input003.value;
+                        
+                        if (b == "Tequesta" || b == "tequesta") {
+                            g = 1;
+                            input001.value = b;
+                            check001.innerHTML = "<text class=button002>" + "✔" + "</text>";
+                        } else {
+                            input001.value = b;
+                            check001.innerHTML = "<text class=button002>" + "✖" + "</text>";
+                        }
+                
+                        if (c == "Miami River" || c == "miami river" || c == "Miami river") {
+                            h = 1
+                            input002.value = c;
+                            check002.innerHTML = "<text class=button002>" + "✔" + "</text>";
+                        } else {
+                            input002.value = c;
+                            check002.innerHTML = "<text class=button002>" + "✖" + "</text>";
+                        }
+                
+                        if (d == "Tuttle" || d == "tuttle") {
+                            i = 1;
+                            input003.value = d;
+                            check003.innerHTML = "<text class=button002>" + "✔" + "</text>";
+                        } else {
+                            input003.value = d;
+                            check003.innerHTML = "<text class=button002>" + "✖" + "</text>";
+                        }
+                
+                        if (g == 1 && h == 1 && i == 1 ) {
+                            message001.innerHTML = "Congratulation! You have successfully finished this quiz.";
+                            disappear001.innerHTML = "";
+                            reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Exit</button></div>";
+                        }
+                    }
+                    function repeat001() {
+                        location.reload();
+                    }
+                </script>
+            </div>
+        </div>
+        </div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
