@@ -61,9 +61,58 @@
 
 .portrait2 {
     width: 300px;
-    height: 350px;
-    margin-left: 150px;
-    margin-top: 200px;;
+    height: 300px;
+    margin-left: -2px;
+    margin-top: 300px;
+}
+
+a.hideDisplay {
+    position: relative;
+    z-index: 20;
+    color: black;
+    text-decoration: none;
+}
+
+a.hideDisplay:hover {
+    z-index: 30; /* the higher the number, the higher on the page it appears */
+}
+
+a.hideDisplay span.showDisplayOnHover {
+    display: none; /* hides box until you hover over it */
+}
+
+a.hideDisplay:hover span.showDisplayOnHover {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+
+    line-height: 25px;
+
+    top: -600px;
+    left: -190px;
+
+    width: 378px;
+    height: 250px;
+    padding: 10px;
+
+    border: 1px solid #666666;
+    background-color: #c0cedd;
+
+    color: #000000;
+    text-align: left;
+}
+
+span.showBodyOfDisplayOnHover {
+    font-size: 16px;
+    font-weight: normal;
+    color: #444;
+    line-height: 18px;
+}
+
+.Tequesta {
+    width: 400px;
+    height: 250px;
+    margin: 0px 0px 350px -190px;
 }
 
 button {
