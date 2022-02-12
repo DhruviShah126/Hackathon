@@ -1,8 +1,15 @@
-h1 {
+.homeHeader {
     text-align: center;
     font-size: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+}
+
+.riverHeader {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 .box1 {
@@ -45,11 +52,18 @@ h1 {
   }
     
 
-.portrait {
+.portrait1 {
     width: 300px;
     height: 350px;
     margin-left: 320px;
     margin-top: -90px;;
+}
+
+.portrait2 {
+    width: 300px;
+    height: 350px;
+    margin-left: 150px;
+    margin-top: 200px;;
 }
 
 button {
@@ -59,10 +73,13 @@ button {
     border-radius: 10px;
     color: #fff;
     padding: 8px;
-    display: inline-block;
   }
 
-body {
+.homeBody {
     background-image: url(https://www.miamiandbeaches.com/getmedia/bbcdccc6-8f9c-41e9-b531-4b7f8b7fc093/Miami_Zoom-Rooms-Customized-Background-Images_Downtown_10.aspx?ext=.jpg);
 }
 
+.riverBody {
+    background-image: url(https://instyleyachts.com/wp-content/uploads/2021/04/Miami-River--710x410.jpeg);
+    background-size: 1600px 800px;
+}
