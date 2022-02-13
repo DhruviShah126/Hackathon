@@ -2,19 +2,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="stylesheet" href="css/nav-bar.css">
     </head>
     <body class="homeBody">
-        <h1 class="homeHeader">Welcome to [Insert Name Here]!</h1>
+        <nav>
+            <div class="heading">
+                <h4>Travel With Mia</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="pages/MiamiRiver.html">Miami River</a></li>
+                <li><a href="pages/royalPalm.html">Royal Palm</a></li>
+                <li><a href="pages/brickellTrading.html">Brickell Trading</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- <h1 class="homeHeader">Welcome to [Insert Name Here]!</h1> -->
         <div class="box1 sb7">Hi! My name is Mia and I will be your tour guide today. Come with me as I show you some historical landmarks here in the city of Miami. Along the way, you will encounter trivia questions about each place that we visit. Once you get them correct, you can uncover some fun facts!</div>
         <div class="contain" style="width: 80%; justify-content: center" >
             <img class="tour-guide" src="img/tourist.png" style="margin-top: -5%">
             <button id="miamiRiver">Start the Tour!</button>
         </div>
-        <a href="https://www.miamiandbeaches.com/events/virtualmiami/virtual-miami-backgrounds" style="margin-left: 80%; font-size: 20px;">Image Reference Link - Background</a>
-        <a href="https://img.lovepik.com/element/40138/1462.png_300.png " style="margin-left: 80%; font-size: 20px;">Image Reference Link - Tour Guide</a>
+        <a href="https://images.miamiandbeaches.com/getmedia/1350bd9b-c90c-4749-acdd-a1889b68ae04/Miami_Shines_Miami_Beach_Lifeguard_stand_1440x900.jpg.aspx?width=1440&height=900&ext=.jpg" style="margin-left: 85%; font-size: 15px;">Image Reference Link - Background</a>
+        <a href="https://img.lovepik.com/element/40138/1462.png_300.png " style="margin-left: 85%; font-size: 15px;">Image Reference Link - Tour Guide</a>
         <script>
             document.querySelector('#miamiRiver').addEventListener('click', () => {
-                window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/MiamiRiver.html';
+                window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/pages/MiamiRiver.html';
             })
         </script>
     </body>

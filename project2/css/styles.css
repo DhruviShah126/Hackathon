@@ -1,15 +1,24 @@
 .homeHeader {
+    display: flex;
     text-align: center;
+    justify-content: center;
     font-size: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    font-family: segoe script;
+    color: rgb(243, 243, 164);
 }
 
 .riverHeader {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding: 2%;
+    font-family: corbel;
     color: black;
+}
+
+.format {
+    margin-left: -30%;
 }
 
 .box1 {
@@ -20,9 +29,10 @@
     text-align: center;
     font-weight: 900;
     color: black;
-    font-family: arial;
+    font-family: consolas;
     position: relative;
-    background-color: lightgrey;
+    background-color: lightsteelblue;
+    opacity: 70%;
   }
 
   .sb7:before {
@@ -71,8 +81,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 96%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: 0.5s ease;
 
@@ -86,13 +96,17 @@
 
 .overlay h2 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: gabriola;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    padding: 2%;    
     font-size: 30px;
 }
 
 .overlay p {
     text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: microsoft yi baiti;
+    font-weight: bold;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-size: 20px;
     padding-left: 15px;
     padding-right: 15px;
@@ -104,11 +118,13 @@
     height: 350px;
     margin-right: 3%;
     margin-left: 5%;
+    margin-bottom: 3.5%;
 }
 
 #miamiRiver {
     margin-right: 9%;
     margin-top: -9%;
+    font-family: consolas;
 }
 
 .overlay h6 {
@@ -118,29 +134,29 @@
 }
 
 .portrait2 {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     margin-left: -8%;
 }
 
 .portrait3 {
-    width: 350px;
-    height: 375px;
+    width: 300px;
+    height: 335px;
     margin-left: -13%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .portrait4 {
     width: 300px;
-    height: 350px;
+    height: 335px;
     margin-top: -0.5%;
     margin-left: -10%;
     margin-right: 3%;
 }
 
 button {
-    background-color: lightgrey;
-    font-family: arial;
+    background-color: lightsteelblue;
+    font-family: consolas;
     font-weight: 900;
     text-align: center;
     margin: 30px;
@@ -149,20 +165,15 @@ button {
     border-radius: 10px;
     color: black;
     padding: 8px;
+    cursor: pointer;
   }
 
 .homeBody {
-    background-image: url(https://www.miamiandbeaches.com/getmedia/bbcdccc6-8f9c-41e9-b531-4b7f8b7fc093/Miami_Zoom-Rooms-Customized-Background-Images_Downtown_10.aspx?ext=.jpg);
+    background-image: url(https://images.miamiandbeaches.com/getmedia/1350bd9b-c90c-4749-acdd-a1889b68ae04/Miami_Shines_Miami_Beach_Lifeguard_stand_1440x900.jpg.aspx?width=1440&height=900&ext=.jpg);
+    background-size: cover;
 } 
 
 .riverBody {
-    background-color: #98bcd4;
-}
-
-.palmBody {
-    background-color: #e6d1aa;
-}
-
-.brickellBody {
-    background-color: #ffd0d0;
+    background-image: url(https://cdn.shopify.com/s/files/1/0071/2176/4403/products/spatial-toupe_grande.png?v=1618254947.jpg);
+    background-size: cover;
 }
