@@ -112,6 +112,12 @@
     margin-left: -100px;
 }
 
+.portrait3 {
+    width: 300px;
+    height: 325px;
+    margin-left: -13%;
+}
+
 button {
     background-color: lightgrey;
     font-family: arial;
@@ -130,7 +136,9 @@ button {
 } 
 
 .riverBody {
-    /* background-image: url(https://instyleyachts.com/wp-content/uploads/2021/04/Miami-River--710x410.jpeg); */
-    background-size: 1600px 800px;
     background-color: #98bcd4;
+}
+
+.palmBody {
+    background-color: #e6d1aa;
 }
