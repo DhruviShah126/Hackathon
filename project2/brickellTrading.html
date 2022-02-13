@@ -51,40 +51,41 @@
             }
             </style>
     </head>
-    <body class="palmBody">
-        <h1 class="riverHeader">Welcome to the Royal Palm!</h1>
+    <body class="brickellBody">
+        <h1 class="riverHeader">Welcome to the Brickell Trading Center!</h1>
         <div class="contain">
             <div class="image-container" style="justify-content: center;">
-                <img src="img/royalPalmBefore.png" alt="Royal Palm in 1901">  
+                <img src="img/brickellPeople.png" alt="William and Mary Brickell">  
                 <div class="overlay">
-                    <h2 style="font-size: 17px">Royal Palm in 1901</h2>
-                    <p style="font-size: 14px">In 1896-1897, Tuttle agreed to give Flagler some land so he could build his Royal Palm Hotel. With the construction of the hotel and a new railway station, the city of Miami began to grow into the metropolis it is today. In 1926 a hurricane severely damaged the hotel since it was constructed out of wood and not able to handle the strong winds. The hotel closed in 1928 after selling some of the hotel’s property to the city which greatly affected hotel management.  
+                    <h2>The Brickell Family</h2>
+                    <p style="font-size: 11px">Brickell Trading post was established by William and Mary Brickell. The resided along the Miami River around 1871 and purchased a lot of land from the surrounding area. They were quite successful in their trading with Miccosukee and Seminoles, but it wasn’t until Flagler began extending his railway that the couple seized an opportunity to give some of their land to Flagler, making their property very valuable. Mary Brickell eventually took control of the business and their wealth flourished, making the Brickell family one the founding families of Miami. Their impact can be seen all throughout the Brickell area today, where resides a bustling metropolis that people from all over the world go to visit. 
+                        <h6>
+                            <a href="https://thenewtropic.com/wp-content/uploads/sites/2/2016/02/mary-and-william-header.jpg ">Image Reference Link</a>
+                        </h6>
                     </p>
                 </div>
             </div>
             <div class="image-container">
-                <img src="img/royalPalmAfter.png" alt="Royal Palm in 1927">
+                <img src="img/brickellShopping.jpg" alt="Inside of the Brickell City Shopping Mall">
                 <div class="overlay">
-                    <h2 style="font-size: 17px">Royal Palm in 1927</h2>
-                    <p style="font-size: 16px">Royal Palm was one of the first hotels in the city of Miami, and there are more and more every day. Because of this hotel, tourism sparked and flourished in South Florida. Now, Miami is one of the most visited cities in the United States. 
-                        <br>
-                        <br>
+                    <h2>The Brickell City Centre</h2>
+                    <p style="font-size: 16px">Currently, Brickell is filled with high-rises, luxury apartments, and a bustling shopping/restaurant scene. As the financial district of South Florida, it is the center for Miami banking, investment, and finance. The center of the city is called Mary Brickell Village, after the woman who helped develop Brickell. 
                         <h6>
-                            <a href="https://miami-history.com/end-of-miamis-royal-palm-hotel/">Image Reference Link</a>
+                            <a href="https://www.forbes.com/sites/taylorboozan/2019/10/09/10-things-to-do-without-leaving-brickell-city-centre-the-heart-of-downtown-miami/?sh=54d469d33c3f">Image Reference Link</a>
                         </h6>
                     </p>
                 </div>
             </div>
         </div>
         <div class="contain" style="width: 80%">
-            <img class="portrait3" src="img/tourist.png">
+            <img class="portrait4" src="img/tourist.png">
             <!-- Trigger/Open The Modal -->
-            <button id="myBtn" style="margin-left: -10%; margin-right: 15%; margin-top: -7%">Click Here For Trivia!</button>
-            <button id="brickellTrading" style="margin-left: 13%; margin-right: -10%; margin-top: -7%">On to the Last Location!</button>
+            <button id="myBtn" style="margin-left: -7%; margin-top: -10%">Click Here For Trivia!</button>
+            <button id="index" style="margin-right: -13%; margin-left: 20%; margin-top: -10%">Want to restart the tour? <br> Click here to go back to the start of the tour.</button>
         </div>
         <script>
-            document.querySelector('#brickellTrading').addEventListener('click', () => {
-                window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/brickellTrading.html';
+            document.querySelector('#index').addEventListener('click', () => {
+                window.location.href = 'file:///C:/Users/dhruv/OneDrive/Desktop/Code/Code/Hackathon/project2/index.html';
             })
         </script>
         <!-- The Modal -->
@@ -95,29 +96,14 @@
                 <div id="myModal">
                         <div id="color001">
                             <div id="center001">
-                                <h2><strong>Royal Palm Quiz</strong></h2>
-                                <p><strong>Word Bank:</strong> railway - Flagler - hurricane - Brickell</p>
-                            </div><br />
-                            <p>The Royal Palm was built by Henry <input type="text" class="check003" id="input001" size="15" />
-                                <text class="button002" id="check001"></text> in 1896. In addition to the luxurious hotel, the expansion of his 
-                                <input id="input002" size="15" /><text class="button002" id="check002"></text> 
-                                also became extremely important in opening thee city up to the United States. In 1926, a 
-                                <input id="input003" size="15" /> <text class="button002" id="check003"></text> 
-                                destroyed much of the hotel and eventully was a major factor in its closing.
-                            </p>
-                            <div id="disappear001">
-                                <div id="center001">
-                                    <button class="button001" onclick="submit001()">Submit</button>
+                                <h2><strong>Brickell Quiz</strong></h2>
+                                <p><strong>Word Bank:</strong> Trading Post - Flagler - expansion - Miami - Mary </p></div><br />
+                                <p>William and Mary Brickell established the Brickell <input type="text" class="check003" id="input001" size="15" /><text class="button002" id="check001"></text> in 1871. After selling their property to Flager for the <input id="input002" size="15" /><text class="button002" id="check002"></text> of the railway down south, their property became very valuable.  <input id="input003" size="15" /> <text class="button002" id="check003"></text> took control of the business and the family wealth soon after flourished. The Brickell family became a founding family of Miami.</p>
+                                <div id="disappear001"><div id="center001"><button class="button001" onclick="submit001()">Submit</button></div></div><br />
+                                <div id="center001"><p id="message001"></p><p id="reload001"></p></div>
+                                    <br />
+                                <br />
                                 </div>
-                            </div>
-                            <br />
-                            <div id="center001">
-                                <p id="message001"></p>
-                                <p id="reload001"></p>
-                            </div>
-                            <br />
-                            <br />
-                        </div>
                         </div>
                         <script>
                             var g;
@@ -130,7 +116,7 @@
                                 c = input002.value;
                                 d = input003.value;
                                
-                                if (b == "Flagler" || b == "flagler") {
+                                if (b == "Trading Post" || b == "Trading post" || b == "trading post") {
                                     g = 1;
                                     input001.value = b;
                                     check001.innerHTML = "<text class=button002>" + "✔" + "</text>";
@@ -139,7 +125,7 @@
                                     check001.innerHTML = "<text class=button002>" + "✖" + "</text>";
                                 }
                       
-                                if (c == "railway" || c == "Railway") {
+                                if (c == "expansion" || c == "Expansion") {
                                     h = 1
                                     input002.value = c;
                                     check002.innerHTML = "<text class=button002>" + "✔" + "</text>";
@@ -148,7 +134,7 @@
                                     check002.innerHTML = "<text class=button002>" + "✖" + "</text>";
                                 }
                       
-                                if (d == "hurricane" || d == "Hurricane") {
+                                if (d == "Mary" || d == "mary") {
                                     i = 1;
                                     input003.value = d;
                                     check003.innerHTML = "<text class=button002>" + "✔" + "</text>";
@@ -158,7 +144,7 @@
                                 }
                       
                                 if (g == 1 && h == 1 && i == 1 ) {
-                                    message001.innerHTML = "Congratulations! You got all of the questions right!. <br> <br> This calls for a fun fact: <br> <br> Did you know that the Royal Palm housed the city&#8217s first elevators, swimming pool, and electric lights?";
+                                    message001.innerHTML = "Congratulations! You got all of the questions right! <br> <br> This calls for a fun fact: <br> <br> Did you know that Brickell was once known as &#8221Millionaire&#8217s Row&#8221";
                                     disappear001.innerHTML = "";
                                     reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Exit</button></div>";
                                 }

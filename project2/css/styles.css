@@ -102,20 +102,40 @@
 .tour-guide {
     width: 300px;
     height: 350px;
-    margin-right: -3%;
+    margin-right: 3%;
     margin-left: 5%;
+}
+
+#miamiRiver {
+    margin-right: 9%;
+    margin-top: -9%;
+}
+
+.overlay h6 {
+    font-size: 10px;
+    display: inline;
+    margin-left: 36%;
 }
 
 .portrait2 {
     width: 300px;
     height: 300px;
-    margin-left: -100px;
+    margin-left: -8%;
 }
 
 .portrait3 {
-    width: 300px;
-    height: 325px;
+    width: 350px;
+    height: 375px;
     margin-left: -13%;
+    margin-top: 2%;
+}
+
+.portrait4 {
+    width: 300px;
+    height: 350px;
+    margin-top: -0.5%;
+    margin-left: -10%;
+    margin-right: 3%;
 }
 
 button {
@@ -141,4 +161,8 @@ button {
 
 .palmBody {
     background-color: #e6d1aa;
+}
+
+.brickellBody {
+    background-color: #ffd0d0;
 }
